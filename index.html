@@ -1,0 +1,997 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duhoctoancau</title>
+    <!-- Set Favicon -->
+    <!-- Bootstrap 4 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Fontawesome 5 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Slick CSS Import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="upper-header py-3">
+        <a href="#">
+          <img src="./images/logo-example.png" class="d-block mx-auto" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <div class="main-navbar">
+      <div class="container">
+        <div class="d-flex align-items-center nav-btn-container">
+          <button type="button" id="sidebar-toggle">
+            <i data-feather="menu"></i>
+          </button>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Trang chủ</a>
+          </div>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Hướng nghiệp</a>
+          </div>
+          <div class="dropdown nav-link-ctn">
+            <a
+              class="nav-link"
+              href="#"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Du học</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Du học châu âu</a
+                >
+                <a class="dropdown-item ps-4" href="#">Du học Đức</a>
+                <a class="dropdown-item ps-4" href="#">Du học Pháp</a>
+                <a class="dropdown-item ps-4" href="#">Du học Anh</a>
+                <a class="dropdown-item ps-4" href="#">Du học Tây Ban Nha</a>
+                <a class="dropdown-item ps-4" href="#">Du học Hà Lan</a>
+                <a class="dropdown-item ps-4" href="#">Du học Thụy Sĩ</a>
+                <a class="dropdown-item ps-4" href="#">Du học Ireland</a>
+              </li>
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Du học châu úc/mỹ</a
+                >
+                <a class="dropdown-item ps-4" href="#">Du học Mỹ</a>
+                <a class="dropdown-item ps-4" href="#">Du học Canada</a>
+                <a class="dropdown-item ps-4" href="#">Du học Úc</a>
+                <a class="dropdown-item ps-4" href="#">Du học New Zealand</a>
+              </li>
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Du học châu á</a
+                >
+                <a class="dropdown-item ps-4" href="#">Du học Singapore</a>
+                <a class="dropdown-item ps-4" href="#">Du học Hàn Quốc</a>
+                <a class="dropdown-item ps-4" href="#">Du học Trung Quốc</a>
+                <a class="dropdown-item ps-4" href="#"
+                  >Học tiếng anh tại Philippines</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown nav-link-ctn">
+            <a
+              class="nav-link"
+              href="#"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Học bổng</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Học bổng châu âu</a
+                >
+                <a class="dropdown-item ps-4" href="#">Học bổng Anh</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Pháp</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Phần Lan</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Tây Ban Nha</a>
+              </li>
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Học bổng châu á</a
+                >
+                <a class="dropdown-item ps-4" href="#">Học bổng Singapore</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Trung Quốc</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Indonesia</a>
+              </li>
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Học bổng úc/mỹ</a
+                >
+                <a class="dropdown-item ps-4" href="#">Học bổng Mỹ</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Úc</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Canada</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Cẩm nang du học</a>
+          </div>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Liên hệ</a>
+          </div>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Hỏi đáp</a>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-sidebar">
+        <div class="sidebar-nav">
+          <a href="">Trang chủ</a>
+        </div>
+        <div class="sidebar-nav">
+          <a href="">Hướng nghiệp</a>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center sidebar-nav"
+        >
+          <a
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            id="sidebar-collapse1"
+            >Du học</a
+          >
+          <i id="collapsed-chevron1" class="fas fa-plus text-white"></i>
+        </div>
+        <div class="collapse" id="collapseExample">
+          <div class="sidebar-collapse">
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Du học châu âu</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Đức</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Pháp</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Anh</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Tây Ban Nha</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Hà Lan</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Thụy Sĩ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Ireland</a>
+            </div>
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Du học châu úc/mỹ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Mỹ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Canada</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Úc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học New Zealand</a>
+            </div>
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Du học châu á</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Singapore</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Hàn Quốc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Trung Quốc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học tiếng anh tại Philippines</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center sidebar-nav"
+        >
+          <a
+            data-bs-toggle="collapse"
+            href="#collapseExample2"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            id="sidebar-collapse2"
+            >Học bổng</a
+          >
+          <i id="collapsed-chevron2" class="fas fa-plus text-white"></i>
+        </div>
+        <div class="collapse" id="collapseExample2">
+          <div class="sidebar-collapse">
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Học bổng châu âu</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Anh</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Pháp</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Phần Lan</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Tây Ban Nha</a>
+            </div>
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Học bổng châu á</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Singapore</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Trung Quốc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Indonesia</a>
+            </div>
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Học bổng úc/mỹ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Mỹ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Úc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Canada</a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-nav">
+          <a href="">Cẩm nang du học</a>
+        </div>
+        <div class="sidebar-nav">
+          <a href="">Liên hệ</a>
+        </div>
+        <div class="sidebar-nav">
+          <a href="">Hỏi đáp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-slide">
+      <div class="slide">
+        <img src="./images/banner-example.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./images/banner-example.png" alt="" />
+      </div>
+      <div class="slide">
+        <img src="./images/banner-example.png" alt="" />
+      </div>
+    </div>
+
+    <div class="page-container">
+      <div class="container">
+        <h1 class="text-center fw-bold text-uppercase mb-3 main-color">
+          Các nước du học
+        </h1>
+        <p class="text-center mb-5">
+          Danh sách những quốc gia có nền giáo dục phát triển, được du học sinh
+          Việt chọn đến nhiều nhất
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <div class="place-block bigger-block">
+              <img src="./images/thuy-si.jpg" alt="" class="img-fluid" />
+              <span class="place-info">Du học Thụy Sĩ</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 mb-3">
+            <div class="place-block bigger-block">
+              <img src="./images/my.jpg" alt="" class="img-fluid" />
+              <span class="place-info">Du học Mỹ</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 mb-3">
+            <div class="place-block bigger-block">
+              <img src="./images/phap.jpg" alt="" class="img-fluid" />
+              <span class="place-info">Du học Pháp</span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="place-block bigger-block">
+              <img src="./images/england.jpg" alt="" class="img-fluid" />
+              <span class="place-info">Du học Anh</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-feature py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="feature-block bigger-block" id="feature-block-1">
+                <i data-feather="home"></i>
+                <div>
+                  <h4 class="text-uppercase fw-bold">Đăng ký tư vấn online</h4>
+                  <p>Kết nối với chúng tôi và nhận tư vấn sau vài phút</p>
+                  <i data-feather="arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="feature-block bigger-block" id="feature-block-2">
+                <i data-feather="book-open"></i>
+                <div>
+                  <h4 class="text-uppercase fw-bold">Đăng ký tư vấn online</h4>
+                  <p>Kết nối với chúng tôi và nhận tư vấn sau vài phút</p>
+                  <i data-feather="arrow-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="feature-block bigger-block" id="feature-block-3">
+                <i data-feather="award"></i>
+                <div>
+                  <h4 class="text-uppercase fw-bold">Đăng ký tư vấn online</h4>
+                  <p>Kết nối với chúng tôi và nhận tư vấn sau vài phút</p>
+                  <i data-feather="arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-field py-5">
+        <div class="container">
+          <h5 class="text-center fw-bold text-uppercase main-color">
+            Cập nhật
+          </h5>
+          <h1 class="text-center fw-bold text-uppercase alt-color mb-5">
+            Tin tức và sự kiện
+          </h1>
+          <div class="row">
+            <div class="col-12 col-md-4 mb-5">
+              <div class="news-block bigger-block">
+                <div class="news-thumb">
+                  <img src="./images/phap.jpg" alt="" />
+                </div>
+                <h3 class="text-uppercase">
+                  Kim Anh - Cô gái không ngừng nỗ lực theo đuổi giấc mơ du học
+                  Mỹ...
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="news-block bigger-block">
+                <div class="news-thumb">
+                  <img src="./images/phap.jpg" alt="" />
+                </div>
+                <h3 class="text-uppercase">
+                  Kim Anh - Cô gái không ngừng nỗ lực theo đuổi giấc mơ du học
+                  Mỹ...
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="news-block bigger-block">
+                <div class="news-thumb">
+                  <img src="./images/phap.jpg" alt="" />
+                </div>
+                <h3 class="text-uppercase">
+                  Kim Anh - Cô gái không ngừng nỗ lực theo đuổi giấc mơ du học
+                  Mỹ...
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="news-block bigger-block">
+                <div class="news-thumb">
+                  <img src="./images/phap.jpg" alt="" />
+                </div>
+                <h3 class="text-uppercase">
+                  Kim Anh - Cô gái không ngừng nỗ lực theo đuổi giấc mơ du học
+                  Mỹ...
+                </h3>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <div class="news-block bigger-block">
+                <div class="news-thumb">
+                  <img src="./images/phap.jpg" alt="" />
+                </div>
+                <h3 class="text-uppercase">
+                  Kim Anh - Cô gái không ngừng nỗ lực theo đuổi giấc mơ du học
+                  Mỹ...
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scholarship-field py-5">
+        <div class="container">
+          <div
+            class="d-flex justify-content-center align-items-center mb-5 gap-2"
+          >
+            <i data-feather="award"></i>
+            <h1 class="text-uppercase fw-bold main-color">Học bổng du học</h1>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-5 mb-md-0">
+              <div class="scholarship-block bigger-block">
+                <div class="scholarship-thumb">
+                  <img src="./images/my.jpg" alt="" />
+                </div>
+                <h3 class="mb-3">Học bổng học viện NIM Singapore 2022</h3>
+                <p class="mb-3 text-secondary">
+                  Học viện Quản lý Nanyang (NIM) được trao chứng nhận ISO 9001
+                  và Edutrust 4 năm...
+                </p>
+                <button class="main-button" type="button">Đọc tiếp</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="scholarship-block bigger-block">
+                <div class="scholarship-thumb">
+                  <img src="./images/my.jpg" alt="" />
+                </div>
+                <h3 class="mb-3">Học bổng học viện NIM Singapore 2022</h3>
+                <p class="mb-3 text-secondary">
+                  Học viện Quản lý Nanyang (NIM) được trao chứng nhận ISO 9001
+                  và Edutrust 4 năm...
+                </p>
+                <button class="main-button" type="button">Đọc tiếp</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback-field position-relative py-5">
+        <div class="container">
+          <h1 class="text-center fw-bold text-white text-uppercase mb-5">
+            Câu chuyện thành công
+          </h1>
+          <div class="feedback-slide">
+            <div class="feedback-slide-item">
+              <p class="text-center text-white mb-5">
+                Chân thành cảm ơn Edutas và đặc biệt là bạn Ngọc đã tư vấn và
+                hướng dẫn thủ tục cũng như giúp mình chuẩn bị hồ sơ rất chi tiết
+                để mình hoàn thành giấc mơ...
+              </p>
+              <p class="text-white text-center">
+                <span class="fw-bold">Bạn Tố Như</span>, du học sinh Úc
+              </p>
+            </div>
+            <div class="feedback-slide-item">
+              <p class="text-center text-white mb-5">
+                Chân thành cảm ơn Edutas và đặc biệt là bạn Ngọc đã tư vấn và
+                hướng dẫn thủ tục cũng như giúp mình chuẩn bị hồ sơ rất chi tiết
+                để mình hoàn thành giấc mơ...
+              </p>
+              <p class="text-white text-center">
+                <span class="fw-bold">Bạn Tố Như</span>, du học sinh Úc
+              </p>
+            </div>
+            <div class="feedback-slide-item">
+              <p class="text-center text-white mb-5">
+                Chân thành cảm ơn Edutas và đặc biệt là bạn Ngọc đã tư vấn và
+                hướng dẫn thủ tục cũng như giúp mình chuẩn bị hồ sơ rất chi tiết
+                để mình hoàn thành giấc mơ...
+              </p>
+              <p class="text-white text-center">
+                <span class="fw-bold">Bạn Tố Như</span>, du học sinh Úc
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="quote-left">
+          <img src="./images/quote-left.png" alt="" />
+        </div>
+        <div class="quote-right">
+          <img src="./images/quote-right.png" alt="" />
+        </div>
+      </div>
+
+      <div class="faq-field py-5">
+        <div class="container">
+          <i
+            class="text-center d-block mx-auto mb-2"
+            data-feather="help-circle"
+          ></i>
+          <h1 class="text-center fw-bold text-uppercase sub-color mb-4">
+            Tư vấn và hỏi đáp
+          </h1>
+          <p class="text-center mb-5">
+            Các chuyên gia của chúng tôi luôn sẵn sàng để giải đáp các thắc mắc
+            của bạn về các vấn đề du học, hướng nghiệp. Đây là top 10 câu hỏi
+            thường gặp nhất.
+          </p>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <i class="main-color me-2" data-feather="help-circle"></i>
+                  <h5 class="text-black">Đi du học cần những gì?</h5>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-justify mb-3">
+                    Mình muốn đi du học Úc, cho mình hỏi điều kiện để được đi và
+                    chi phí tối thiểu bao nhiêu, các thủ tục hồ sơ mình phải
+                    chuẩn bị những gì ạ, xin cảm ơn !
+                  </p>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="d-flex align-items-center">
+                      <i data-feather="user"></i>
+                      <span class="text-secondary me-1">Hỏi bởi</span>
+                      <a href="#">Trần Hữu Cường</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <a class="main-color" href=""
+                        ><i data-feather="corner-up-left"></i>
+                        Xem trả lời
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <i class="main-color me-2" data-feather="help-circle"></i>
+                  <h5 class="text-black">Đi du học cần những gì?</h5>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-justify mb-3">
+                    Mình muốn đi du học Úc, cho mình hỏi điều kiện để được đi và
+                    chi phí tối thiểu bao nhiêu, các thủ tục hồ sơ mình phải
+                    chuẩn bị những gì ạ, xin cảm ơn !
+                  </p>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="d-flex align-items-center">
+                      <i data-feather="user"></i>
+                      <span class="text-secondary me-1">Hỏi bởi</span>
+                      <a href="#">Trần Hữu Cường</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <a class="main-color" href=""
+                        ><i data-feather="corner-up-left"></i>
+                        Xem trả lời
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="main-color me-2" data-feather="help-circle"></i>
+                  <h5 class="text-black">Đi du học cần những gì?</h5>
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p class="text-justify mb-3">
+                    Mình muốn đi du học Úc, cho mình hỏi điều kiện để được đi và
+                    chi phí tối thiểu bao nhiêu, các thủ tục hồ sơ mình phải
+                    chuẩn bị những gì ạ, xin cảm ơn !
+                  </p>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="d-flex align-items-center">
+                      <i data-feather="user"></i>
+                      <span class="text-secondary me-1">Hỏi bởi</span>
+                      <a href="#">Trần Hữu Cường</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <a class="main-color" href=""
+                        ><i data-feather="corner-up-left"></i>
+                        Xem trả lời
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="handbook-field py-5">
+        <div class="container">
+          <div
+            class="d-flex justify-content-center align-items-center gap-2 mb-5"
+          >
+            <i data-feather="book-open"></i>
+            <h1 class="fw-bold text-uppercase main-color">Cẩm nang du học</h1>
+          </div>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">
+              <a href="#">Hướng nghiệp trước khi đi du học</a>
+            </li>
+            <li class="list-group-item"><a href="#">Tư vấn & Study Plan</a></li>
+            <li class="list-group-item"><a href="#">Hỗ trợ làm hồ sơ</a></li>
+            <li class="list-group-item"><a href="#">Trang bị kỹ năng</a></li>
+            <li class="list-group-item"><a href="#">Đồng hành</a></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="contact-field py-5">
+        <div class="container">
+          <div
+            class="d-flex justify-content-center align-items-center gap-2 mb-5"
+          >
+            <i data-feather="book-open"></i>
+            <h1 class="fw-bold text-uppercase main-color">
+              Đăng ký tư vấn miễn phí
+            </h1>
+          </div>
+          <div class="contact-block-outer mx-auto">
+            <div class="contact-block-inner">
+              <p class="text-center mb-3">
+                Liên hệ ngay cho
+                <span class="fw-bold">duhoctoancau.com</span> qua số hotline để
+                nhận được sự hỗ trợ nhanh nhất từ đội ngũ tư vấn viên dày dặn
+                kinh nghiệm!
+              </p>
+              <div class="row mb-3">
+                <div class="col-12 col-md-4 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Họ tên bạn (bắt buộc)"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email của bạn"
+                  />
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Số điện thoại (bắt buộc)"
+                    required
+                  />
+                </div>
+                <div class="col-6 col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Địa chỉ"
+                  />
+                </div>
+                <div class="col-6 col-md-6 mb-3">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected disabled>
+                      --Chương trình du học quan tâm
+                    </option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <p class="main-color fw-bold mb-3">
+                Chúng tôi cam kết không chia sẻ thông tin của bạn cho bất kỳ bên
+                thứ ba nào:
+              </p>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Tôi đồng ý để duhoctoancau.com liên lạc tư vấn qua điện thoại
+                  và email
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Có! Tôi muốn nhận thông tin về khóa học, trường, học bổng và
+                  cẩm nang du học hữu ích từ duhoctoancau.com
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Đồng thời, tôi đồng ý chia sẻ thông tin của tôi tới các trường
+                  đại học phù hợp để nhận thông tin cập nhật từ các trường này
+                </label>
+              </div>
+              <button
+                class="d-flex mx-auto align-items-center main-button gap-2"
+              >
+                <i data-feather="mail"></i>Đăng ký
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-customer-field py-5">
+        <div class="container">
+          <h1 class="fw-bold text-uppercase text-center text-dark mb-3">
+            ▬▬▬▬▬▬
+          </h1>
+          <h1 class="fw-bold text-uppercase text-center text-black mb-5">
+            Đối tác của chúng tôi
+          </h1>
+          <div class="customer-slide">
+            <div class="bigger-block">
+              <img
+                class="img-fluid d-block mx-auto"
+                src="./images/logo-example.png"
+                alt=""
+              />
+            </div>
+            <div class="bigger-block">
+              <img
+                class="img-fluid d-block mx-auto"
+                src="./images/logo-example.png"
+                alt=""
+              />
+            </div>
+            <div class="bigger-block">
+              <img
+                class="img-fluid d-block mx-auto"
+                src="./images/logo-example.png"
+                alt=""
+              />
+            </div>
+            <div class="bigger-block">
+              <img
+                class="img-fluid d-block mx-auto"
+                src="./images/logo-example.png"
+                alt=""
+              />
+            </div>
+            <div class="bigger-block">
+              <img
+                class="img-fluid d-block mx-auto"
+                src="./images/logo-example.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3 mb-3 pb-3 mb-md-0 footer-block">
+              <h4 class="font-weight-bold text-uppercase mb-3">About us</h4>
+              <a class="d-block" href="">Contact us</a>
+              <a class="d-block" href="">Order by phone</a>
+              <a class="d-block" href="">FAQ</a>
+              <a class="d-block" href="">Delivery</a>
+              <a class="d-block" href="">Warranty, Exchanges & Returns</a>
+              <a class="d-block" href="">Stores</a>
+            </div>
+            <div class="col-12 col-md-3 mb-3 pb-3 mb-md-0 footer-block">
+              <h4 class="font-weight-bold text-uppercase mb-3">Courses</h4>
+              <a class="d-block" href="">About us</a>
+              <a class="d-block" href="">Stories</a>
+              <a class="d-block" href="">Press</a>
+              <a class="d-block" href="">Production</a>
+            </div>
+            <div class="col-12 col-md-3 mb-3 pb-3 mb-md-0 footer-block">
+              <h4 class="font-weight-bold text-uppercase mb-3">Why Edumart</h4>
+              <a class="d-block" href="">About us</a>
+              <a class="d-block" href="">Stories</a>
+              <a class="d-block" href="">Press</a>
+              <a class="d-block" href="">Production</a>
+            </div>
+            <div class="col-12 col-md-3 mb-3 pb-3 mb-md-0 footer-block">
+              <h4 class="font-w-bold text-uppercase mb-3">Why Edumart</h4>
+              <a class="d-block" href="">About us</a>
+              <a class="d-block" href="">Stories</a>
+              <a class="d-block" href="">Press</a>
+              <a class="d-block" href="">Production</a>
+            </div>
+          </div>
+          <div class="d-flex footer-watermark">
+            <p>
+              © 2017 <span class="text-white fw-bold">Edumart</span>. All right
+              reserved.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="#" class="text-uppercase">Terms of use</a>
+              <a href="#" class="text-uppercase">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="go-to-top-btn">
+      <button
+        id="toTop"
+        type="button"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="Lên đầu trang"
+      >
+        <i data-feather="arrow-up"></i>
+      </button>
+    </div>
+
+    <div class="social-group">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Facebook"
+      >
+        <img
+          src="https://bizweb.dktcdn.net/100/411/628/themes/804441/assets/icon-menu-right1.png?1669393939876"
+          alt=""
+        />
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Zalo"
+      >
+        <img
+          src="https://bizweb.dktcdn.net/100/411/628/themes/804441/assets/icon-menu-right2.png?1669393939876"
+          alt=""
+        />
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        class="phone"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Gọi cho Pancharm"
+      >
+        <img
+          src="https://bizweb.dktcdn.net/100/411/628/themes/804441/assets/icon-menu-right3.png?1669393939876"
+          alt=""
+        />
+      </a>
+    </div> -->
+
+    <!-- jQuery 3.6.1 CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap 5 JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Feather icon JS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Local JS -->
+    <script defer src="./js/app.js"></script>
+  </body>
+</html>
