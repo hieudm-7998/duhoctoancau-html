@@ -1,4 +1,6 @@
-$(document).ready(function () {
+var $jq = jQuery.noConflict();
+
+$jq(document).ready(function () {
   feather.replace();
 
   $("#sidebar-toggle").on("click", function () {
@@ -30,7 +32,7 @@ $(document).ready(function () {
     slidesToShow: 1,
     arrows: false,
     dots: false,
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: 2000,
   });
@@ -60,5 +62,18 @@ $(document).ready(function () {
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
+  });
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop()) {
+      $(".go-to-top-btn").fadeIn();
+    } else {
+      $(".go-to-top-btn").fadeOut();
+    }
+  });
+
+  $(".go-to-top-btn").click(function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return false;
   });
 });
