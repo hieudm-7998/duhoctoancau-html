@@ -508,4 +508,120 @@ ul {
   .mobile-social-group {
     display: none;
   }
+}
+
+.banner-static {
+  width: 100%;
+  height: 120px;
+  background: url("./../images/bg-inner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.news-list .news-ctn .news-thumb {
+  height: 170px;
+  margin-bottom: 1rem;
+}
+.news-list .news-ctn .news-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news-list .news-ctn .news-info .news-title {
+  height: 59.56px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.news-list .news-ctn .news-info .news-title p {
+  color: black;
+  font-weight: 600;
+  transition: 0.2s color ease-in-out;
+  line-height: 1.2;
+}
+.news-list .news-ctn .news-info .news-description {
+  height: 59.5px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.news-list .news-ctn .news-info .news-description p {
+  color: black;
+  line-height: 1.2;
+}
+.news-list .news-ctn:hover .news-title p {
+  color: #eb058c;
+}
+.news-list .news-contact-block .form-control {
+  margin-bottom: 10px;
+}
+
+.h3-right {
+  font-size: 0.9rem;
+}
+
+.margin-bottom-40 .form-inner {
+  padding: 10px 20px;
+}
+.margin-bottom-40 .form-inner .ul-right .li-right {
+  padding: 10px 0;
+}
+.margin-bottom-40 .form-inner .ul-right .li-right::after {
+  content: none;
+}
+
+.steps_m .panel-title a.collapsed {
+  background: #095ca8;
+}
+
+.related-news-block {
+  display: flex;
+  height: 100px;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+.related-news-block:hover .related-news-title p {
+  color: #eb058c;
+}
+.related-news-block .related-news-thumb {
+  width: 500px;
+  height: 100%;
+}
+.related-news-block .related-news-thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.related-news-block .related-news-title {
+  height: 100%;
+}
+.related-news-block .related-news-title p {
+  color: black;
+  transition: 0.2s color ease-in-out;
+}
+
+.form-support {
+  background-color: #095ca8;
+  color: white;
+}
+
+.btn-search-faq {
+  background: #eb058c;
+}
+
+.faq-item::before,
+.faq-question::before {
+  content: "?";
+}
+
+.question-category::before {
+  content: none;
 }/*# sourceMappingURL=styles.css.map */

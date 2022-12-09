@@ -1,0 +1,1419 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duhoctoancau</title>
+    <!-- Set Favicon -->
+    <!-- Bootstrap 4 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Fontawesome 5 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Slick CSS Import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./css/alt.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="upper-header py-3">
+        <a href="#">
+          <img src="./images/logo-example.png" class="d-block mx-auto" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <div class="main-navbar">
+      <div class="container">
+        <div class="d-flex align-items-center nav-btn-container">
+          <button type="button" id="sidebar-toggle">
+            <i data-feather="menu"></i>
+          </button>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Trang chủ</a>
+          </div>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Hướng nghiệp</a>
+          </div>
+          <div class="dropdown nav-link-ctn">
+            <a
+              class="nav-link"
+              href="#"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Du học</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Du học châu âu</a
+                >
+                <a class="dropdown-item ps-4" href="#">Du học Đức</a>
+                <a class="dropdown-item ps-4" href="#">Du học Pháp</a>
+                <a class="dropdown-item ps-4" href="#">Du học Anh</a>
+                <a class="dropdown-item ps-4" href="#">Du học Tây Ban Nha</a>
+                <a class="dropdown-item ps-4" href="#">Du học Hà Lan</a>
+                <a class="dropdown-item ps-4" href="#">Du học Thụy Sĩ</a>
+                <a class="dropdown-item ps-4" href="#">Du học Ireland</a>
+              </li>
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Du học châu úc/mỹ</a
+                >
+                <a class="dropdown-item ps-4" href="#">Du học Mỹ</a>
+                <a class="dropdown-item ps-4" href="#">Du học Canada</a>
+                <a class="dropdown-item ps-4" href="#">Du học Úc</a>
+                <a class="dropdown-item ps-4" href="#">Du học New Zealand</a>
+              </li>
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Du học châu á</a
+                >
+                <a class="dropdown-item ps-4" href="#">Du học Singapore</a>
+                <a class="dropdown-item ps-4" href="#">Du học Hàn Quốc</a>
+                <a class="dropdown-item ps-4" href="#">Du học Trung Quốc</a>
+                <a class="dropdown-item ps-4" href="#"
+                  >Học tiếng anh tại Philippines</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown nav-link-ctn">
+            <a
+              class="nav-link"
+              href="#"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Học bổng</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Học bổng châu âu</a
+                >
+                <a class="dropdown-item ps-4" href="#">Học bổng Anh</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Pháp</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Phần Lan</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Tây Ban Nha</a>
+              </li>
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Học bổng châu á</a
+                >
+                <a class="dropdown-item ps-4" href="#">Học bổng Singapore</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Trung Quốc</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Indonesia</a>
+              </li>
+              <li class="d-flex flex-column">
+                <a class="dropdown-item main-nav-link text-uppercase" href="#"
+                  >Học bổng úc/mỹ</a
+                >
+                <a class="dropdown-item ps-4" href="#">Học bổng Mỹ</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Úc</a>
+                <a class="dropdown-item ps-4" href="#">Học bổng Canada</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Cẩm nang du học</a>
+          </div>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Liên hệ</a>
+          </div>
+          <div class="nav-link-ctn">
+            <a class="nav-link" href="#">Hỏi đáp</a>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-sidebar">
+        <div class="sidebar-nav">
+          <a href="">Trang chủ</a>
+        </div>
+        <div class="sidebar-nav">
+          <a href="">Hướng nghiệp</a>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center sidebar-nav"
+        >
+          <a
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            id="sidebar-collapse1"
+            >Du học</a
+          >
+          <i id="collapsed-chevron1" class="fas fa-plus text-white"></i>
+        </div>
+        <div class="collapse" id="collapseExample">
+          <div class="sidebar-collapse">
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Du học châu âu</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Đức</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Pháp</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Anh</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Tây Ban Nha</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Hà Lan</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Thụy Sĩ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Ireland</a>
+            </div>
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Du học châu úc/mỹ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Mỹ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Canada</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Úc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học New Zealand</a>
+            </div>
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Du học châu á</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Singapore</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Hàn Quốc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Du học Trung Quốc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học tiếng anh tại Philippines</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-between align-items-center sidebar-nav"
+        >
+          <a
+            data-bs-toggle="collapse"
+            href="#collapseExample2"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            id="sidebar-collapse2"
+            >Học bổng</a
+          >
+          <i id="collapsed-chevron2" class="fas fa-plus text-white"></i>
+        </div>
+        <div class="collapse" id="collapseExample2">
+          <div class="sidebar-collapse">
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Học bổng châu âu</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Anh</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Pháp</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Phần Lan</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Tây Ban Nha</a>
+            </div>
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Học bổng châu á</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Singapore</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Trung Quốc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Indonesia</a>
+            </div>
+            <div class="sidebar-nav">
+              <a href="" class="text-uppercase">Học bổng úc/mỹ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Mỹ</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Úc</a>
+            </div>
+            <div class="sidebar-nav ps-5">
+              <a href="">Học bổng Canada</a>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-nav">
+          <a href="">Cẩm nang du học</a>
+        </div>
+        <div class="sidebar-nav">
+          <a href="">Liên hệ</a>
+        </div>
+        <div class="sidebar-nav">
+          <a href="">Hỏi đáp</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-static"></div>
+
+    <div class="breadcrumb-block mb-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0 py-3">
+            <li class="breadcrumb-item">
+              <a class="text-black" href="#">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-black" href="#">Cẩm nang du học</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Tư vấn hướng nghiệp quốc tế
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="page-container">
+      <div class="news-list py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8 mb-5">
+              <h1 class="text-uppercase text-black fw-bold mb-4">
+                Tư vấn hướng nghiệp quốc tế
+              </h1>
+              <div class="row">
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Câu chuyện hướng nghiệp: "Tôi đã suýt mất con khi
+                            bắt con làm công việc mà nó không thích"
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Cùng nghe anh Phạm Quang Dũng chia sẻ về quá trình
+                            lựa chọn nghề nghiệp cho các con trước ngưỡng cửa
+                            vào đại học. Anh Dũng là một trong nhiều phụ huynh
+                            đang tham gia cùng con vào lộ trình hướng nghiệp
+                            quốc tế tại ASCI.
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-4 mb-5">
+                  <a href="#">
+                    <div class="news-ctn bigger-block">
+                      <div class="news-thumb">
+                        <img
+                          src="./images/news.jpeg"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="news-info">
+                        <div class="news-title">
+                          <p>
+                            Cơ hội nghề nghiệp triển vọng của ngành hospitality
+                          </p>
+                        </div>
+                        <div class="news-description">
+                          <p>
+                            Được mệnh danh là "cái nôi của ngành công nghiệp
+                            không khói, Thụy Sĩ là điểm đến du lịch lý tưởng cho
+                            ngành Quản trị du lịch, nhà hàng và khách sạn
+                          </p>
+                        </div>
+                        <button class="main-button" type="button">
+                          Đọc tiếp <i data-feather="arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="margin-bottom-40">
+                <h3 class="h3-right">
+                  <i data-feather="list"></i> Tư vấn hướng nghiệp quốc tế
+                </h3>
+                <div class="form-inner">
+                  <ul class="ul-right">
+                    <li class="li-right">
+                      <i
+                        class="main-color me-1"
+                        data-feather="arrow-right-circle"
+                      ></i>
+                      <a
+                        href="https://duhoctoancau.com/goc-du-hoc-sinh/"
+                        class="text-black"
+                        >Góc du học sinh</a
+                      >
+                    </li>
+                    <li class="li-right">
+                      <i
+                        class="main-color me-1"
+                        data-feather="arrow-right-circle"
+                      ></i>
+                      <a
+                        href="https://duhoctoancau.com/learning-english/"
+                        class="text-black"
+                        >Learning English</a
+                      >
+                    </li>
+                    <li class="li-right">
+                      <i
+                        class="main-color me-1"
+                        data-feather="arrow-right-circle"
+                      ></i>
+                      <a
+                        href="https://duhoctoancau.com/qua-tang-cuoc-song/"
+                        class="text-black"
+                        >Quà tặng cuộc sống</a
+                      >
+                    </li>
+                    <li class="li-right">
+                      <i
+                        class="main-color me-1"
+                        data-feather="arrow-right-circle"
+                      ></i>
+                      <a
+                        href="https://duhoctoancau.com/luyen-phong-van-visa/"
+                        class="text-black"
+                        >Visa du học</a
+                      >
+                    </li>
+                    <li class="li-right">
+                      <i
+                        class="main-color me-1"
+                        data-feather="arrow-right-circle"
+                      ></i>
+                      <a
+                        href="https://duhoctoancau.com/tu-van-huong-nghiep-quoc-te/"
+                        class="text-black"
+                        >Tư vấn hướng nghiệp quốc tế</a
+                      >
+                    </li>
+                    <li class="li-right">
+                      <i
+                        class="main-color me-1"
+                        data-feather="arrow-right-circle"
+                      ></i>
+                      <a
+                        href="https://duhoctoancau.com/chuyen-gia-tu-van-giao-duc/"
+                        class="text-black"
+                        >Chuyên gia tư vấn giáo dục</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="margin-bottom-40 box-search-right">
+                <h3 class="h3-right">
+                  <i data-feather="map-pin"></i> Điểm đến du học phù hợp với
+                  bạn?
+                </h3>
+                <div class="form-inner">
+                  <form action="/diem-den/" method="get" id="frmsearch">
+                    <div class="mb-3">
+                      <select class="custom-select" name="country">
+                        <option selected="" disabled>--Chọn điểm đến--</option>
+                        <option value="1">Du học Mỹ</option>
+                        <option value="2">Du Học Anh</option>
+                        <option value="3">Du học Pháp</option>
+                        <option value="4">Du Học Singapore</option>
+                        <option value="5">Du học Thuỵ Sĩ</option>
+                        <option value="6">Du học Úc</option>
+                        <option value="7">Du học Hàn Quốc</option>
+                        <option value="8">Du học Hà Lan</option>
+                        <option value="9">Du học Canada</option>
+                        <option value="10">Du học Tây Ban Nha</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="custom-select" name="bachoc">
+                        <option selected="" disabled>--Bậc học--</option>
+                        <option value="2">THPT</option>
+                        <option value="3">Đại học</option>
+                        <option value="4">Sau đại học</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <select class="custom-select" name="nganhhoc">
+                        <option selected="" disabled>--Ngành học--</option>
+                        <option value="5">CNTT</option>
+                        <option value="6">Tài chính</option>
+                        <option value="7">Ngân hàng</option>
+                        <option value="25">Thiết kế đồ hoạ</option>
+                        <option value="26">Luật</option>
+                        <option value="27">
+                          Du lịch - Dịch vụ nhà hàng khách sạn
+                        </option>
+                        <option value="28">Giáo dục - Đào tạo</option>
+                        <option value="29">Kiến trúc - Xây dựng</option>
+                        <option value="30">Nông nghiệp - Thú y</option>
+                        <option value="31">Khác</option>
+                      </select>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="main-button" id="btnsearch">
+                        <i data-feather="search"></i>
+                        Tìm kiếm
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="step-right mb-4">
+                <h2 class="steps_m h2-step margin-bottom-20">
+                  <i data-feather="home"></i> Những điều cần biết
+                </h2>
+                <div class="steps_m" id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="heading0">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapse0"
+                          aria-expanded="false"
+                          aria-controls="collapse0"
+                        >
+                          <span>1</span> Hướng nghiệp trước khi du học
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapse0"
+                      class="collapse"
+                      aria-labelledby="heading0"
+                      data-parent="#accordion"
+                      style=""
+                    >
+                      <div class="card-body">
+                        <p>
+                          <strong
+                            >Bạn có nhận thấy con mình nằm trong số các trường
+                            hợp dưới đây:</strong
+                          >
+                        </p>
+
+                        <ul>
+                          <li>
+                            Lựa chọn nghề theo sở thích và nhu cầu thị trường
+                          </li>
+                          <li>
+                            Định hướng nghề theo ý muốn và truyền thống gia đình
+                          </li>
+                          <li>
+                            Lựa chọn ngành học theo tiêu chuẩn “đủ điều kiện đầu
+                            vào”
+                          </li>
+                        </ul>
+
+                        <p><strong>Và kết quả là:</strong></p>
+
+                        <ul>
+                          <li>
+                            Thất nghiệp, loay hoay tìm việc khi nhu cầu thị
+                            trường thay đổi
+                          </li>
+                          <li>
+                            Dễ chán nản vì nhận ra công việc không như tưởng
+                            tượng
+                          </li>
+                          <li>
+                            Không đủ đam mê,nhiệt huyết để theo nghề và vươn tới
+                            thành công.
+                          </li>
+                        </ul>
+
+                        <p>
+                          Hơn 15 năm trăn trở với hướng nghiệp, đặc biệt là khi
+                          tiếp cận với nhiều chương trình hướng nghiệp tại các
+                          nước phát triển như Mỹ, Nhật Bản, Canada, Pháp… nơi mà
+                          công tác hướng nghiệp được thực hiện rất sớm từ khi
+                          các em học sinh còn học mầm non và tiểu học,
+                          <strong>duhoctoancau.com</strong> đã quyết định theo
+                          đuổi đến tận cùng giá trị cốt lõi về giáo dục. Đó là
+                          việc hướng nghiệp quốc tế và tư vấn lựa chọn nghề
+                          nghiệp trước khi hỗ trợ tư vấn du học các nước.
+                        </p>
+
+                        <ul>
+                          <li>
+                            Hiểu rõ năng lực, điểm mạnh, điểm yếu để từ đó phát
+                            huy thế mạnh, cải thiện điểm yếu nhằm hoàn thiện bản
+                            thân;
+                          </li>
+                          <li>
+                            Lựa chọn được ngành học phù hợp tối ưu với bản thân;
+                          </li>
+                          <li>
+                            Lựa chọn được đất nước, trường học, chương trình học
+                            phù hợp và tiết kiệm nhất;
+                          </li>
+                          <li>
+                            Trang bị các bằng cấp/chứng chỉ chuyên môn cần thiết
+                            cho nghề nghiệp;
+                          </li>
+                          <li>
+                            Trang bị đầy đủ kỹ năng trong quá trình học tập bắt
+                            đầu bằng việc lập kế hoạch phát triển kiến thức và
+                            kỹ năng cần thiết cho tương lai;
+                          </li>
+                          <li>Xây dựng được sự nghiệp thành công.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading1">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapse1"
+                          aria-expanded="false"
+                          aria-controls="collapse1"
+                        >
+                          <span>2</span> Tư vấn &amp; Study Plan
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapse1"
+                      class="collapse"
+                      aria-labelledby="heading1"
+                      data-parent="#accordion"
+                      style=""
+                    >
+                      <div class="card-body">
+                        <p>
+                          <strong>duhoctoancau.com</strong> cung cấp dịch vụ tư
+                          vấn du học Hoa Kỳ, Canada, Pháp, Úc và các nước khác
+                          cho sinh viên và phụ huynh có nhu cầu.<br />
+                          - Tư vấn - xác định mục tiêu du học.<br />
+                          - Tư vấn chọn trường, chọn ngành học phù hợp với điều
+                          kiện và nguyện vọng của học sinh<br />
+                          - Tư vấn các chương trình: trung học công lập, trung
+                          học nội trú, cao đẳng, cao đẳng cộng đồng, đại học,
+                          thạc sỹ (bao gồm MBA), tiến sỹ với hệ thống hơn 1200
+                          đối tác giáo dục ---- Tư vấn các thông tin về học
+                          bổng/hỗ trợ tài chính phù hợp (các suất học bổng thông
+                          thường, hoặc theo chương trình đặc biệt dành cho học
+                          sinh giỏi - khá - trung bình)<br />
+                          - Hướng dẫn trình bày Study Plan đầy đủ và ấn
+                          tượng.<br />
+                          Chúng tôi sở hữu nhân sự lâu năm trong ngành giáo dục
+                          với đầy đủ chứng chỉ ICC về tư vấn và hàng nghìn ca hồ
+                          sơ khó. Điều chúng tôi có thể làm là vận dụng kinh
+                          nghiệm và sự thấu hiểu của mình vào công việc.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapse2"
+                          aria-expanded="false"
+                          aria-controls="collapse2"
+                        >
+                          <span>3</span> Hỗ trợ làm hồ sơ
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapse2"
+                      class="collapse"
+                      aria-labelledby="heading2"
+                      data-parent="#accordion"
+                      style=""
+                    >
+                      <div class="card-body">
+                        <p>
+                          Với 17 năm kinh nghiệm và giúp hàng nghìn học sinh,
+                          sinh viên du học thành công trên khắp thế giới,
+                          <strong>duhoctoancau.com</strong> biết cần phải làm gì
+                          để bạn có 1 bộ hồ sơ học tập và hoạt động ngoại khóa
+                          ấn tượng và truyền đạt một cách đầy đủ nhất đến với
+                          nhà trường<br />
+                          - Kiểm tra trình độ ngoại ngữ miễn phí, tư vấn lộ
+                          trình luyện thi các chứng chỉ ngoại ngữ và kĩ năng cần
+                          thiết<br />
+                          - Dịch thuật đa ngôn ngữ.<br />
+                          - Tư vấn, cung cấp tài liệu, chọn trường, thi học bổng
+                          phù hợp với năng lực.<br />
+                          - Tư vấn lộ trình du học và định cư phù hợp.<br />
+                          - Xin thư mời nhập học các trường, hướng dẫn thủ tục
+                          tài chính, xin Visa du học, thăm thân, công tác.<br />
+                          - Luyện phỏng vấn visa<br />
+                          - Hướng dẫn xây dựng bài luận cá nhân xin học bổng
+                          xuất sắc.<br />
+                          - Hướng dẫn đóng học phí và sinh hoạt phí cho du học
+                          sinh.<br />
+                          - Hỗ trợ nhà ở, đặt vé máy bay, đưa đón sân bay.<br />
+                          - Mua bảo hiểm y tế, bảo hiểm tai nạn cho du học sinh.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading3">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapse3"
+                          aria-expanded="false"
+                          aria-controls="collapse3"
+                        >
+                          <span>4</span> Trang bị kỹ năng
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapse3"
+                      class="collapse"
+                      aria-labelledby="heading3"
+                      data-parent="#accordion"
+                      style=""
+                    >
+                      <div class="card-body">
+                        <p>
+                          Dù học ở Việt Nam hay nước ngoài, bạn đều cần thành
+                          thạo rất nhiều kỹ năng để ứng dụng trong học tập và
+                          sinh hoạt. Tuy nhiên một khi đã chọn du học thì việc
+                          sở hữu những kỹ năng mềm càng trở nên cần thiết hơn
+                          bao giờ hết. Chúng tôi cung cấp các kỹ năng để du học
+                          sinh vượt qua được giai đoạn sống và học tập ở môi
+                          trường mới:<br />
+                          - Kỹ năng sinh tồn - first aid skills<br />
+                          - Giao tiếp để thành công - Communication skills<br />
+                          - Văn hoá giao tiếp trên bàn tiệc - Table dining
+                          skills<br />
+                          - Hướng dẫn trước khi bay - Pre-depature
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading4">
+                      <h4 class="panel-title">
+                        <a
+                          class="collapsed"
+                          role="button"
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="#collapse4"
+                          aria-expanded="false"
+                          aria-controls="collapse4"
+                        >
+                          <span>5</span> Đồng hành
+                        </a>
+                      </h4>
+                    </div>
+                    <div
+                      id="collapse4"
+                      class="collapse"
+                      aria-labelledby="heading4"
+                      data-parent="#accordion"
+                      style=""
+                    >
+                      <div class="card-body">
+                        <p>
+                          Bắt đầu hành trình du học, là một sinh viên quốc tế,
+                          bạn sẽ phải học tập và sinh sống ở một nơi rất xa xôi.
+                          Không ít du học sinh có những bỡ ngỡ khi đặt chân đến
+                          vùng đất mới. <strong>duhoctoancau.com</strong> sẽ
+                          luôn đồng hành cùng du học sinh trên hành trình học
+                          tập và tìm kiếm những cơ hội mới tại nước ngoài:<br />
+                          - Sắp xếp đón tiễn tại sân bay<br />
+                          - Cập nhật thông tin liên tục từ trường tới phụ huynh
+                          và học sinh<br />
+                          - Hỗ trợ hồ sơ thăm thân cho phụ huynh<br />
+                          - Hỗ trợ gia đình và học sinh trong quá trình học tập
+                          tại nước ngoài về thủ tục học tập tại trường, chuyển
+                          trường.<br />
+                          - Hướng dẫn hồ sơ pháp lý, xin gia hạn Visa qua
+                          <em
+                            >Email/Facebook/Viber/Zalo <strong>24/7</strong></em
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="news-contact-block">
+                <h3 class="h3-right">
+                  <i data-feather="headphones"></i>
+                  Liên hệ chuyên gia tư vấn du học
+                </h3>
+                <form id="request-form" class="position-relative">
+                  <div id="LoadingImage" style="display: none"></div>
+                  <input
+                    type="hidden"
+                    name="_token"
+                    value="rQBOpsqC5kgeBG2PE9MG05zAZxZ9wu9GcQQWLGhV"
+                  />
+                  <div class="form-inner">
+                    <div class="margin-bottom-20 text-pri">
+                      <strong
+                        >Chúng tôi cam kết không chia sẻ thông tin của bạn cho
+                        bất kỳ bên thứ ba nào:</strong
+                      >
+                    </div>
+                    <p>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="name"
+                        placeholder="Họ tên bạn (bắt buộc)"
+                        required=""
+                      />
+                    </p>
+                    <p>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="email"
+                        placeholder="Email của bạn"
+                      />
+                    </p>
+                    <p>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="phone"
+                        placeholder="Số điện thoại (bắt buộc)"
+                        required=""
+                      />
+                    </p>
+                    <p>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="address"
+                        placeholder="Địa chỉ"
+                      />
+                    </p>
+                    <p class="margin-bottom-20">
+                      <select class="form-control" name="content">
+                        <option selected="" value="" disabled>
+                          --Chương trình du học quan tâm--
+                        </option>
+                        <option value="Mỹ">Mỹ</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Úc">Úc</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Pháp">Pháp</option>
+                        <option value="Hà Lan">Hà Lan</option>
+                        <option value="Thụy Sỹ">Thụy Sỹ</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Học Tiếng Anh tại Philippines">
+                          Học Tiếng Anh tại Philippines
+                        </option>
+                        <option value="Khác">Khác</option>
+                      </select>
+                    </p>
+                    <div class="margin-bottom-10 frm-check clearfix">
+                      <input
+                        type="checkbox"
+                        class="styled-checkbox"
+                        id="term2"
+                        name="term2"
+                        required=""
+                      />
+                      <label for="term2" class="tpzro">
+                        Tôi đồng ý để duhoctoancau.com liên lạc tư vấn qua điện
+                        thoại và email
+                      </label>
+                    </div>
+                    <div class="margin-bottom-10 frm-check clearfix">
+                      <input
+                        type="checkbox"
+                        class="styled-checkbox"
+                        id="term3"
+                        name="term3"
+                      />
+                      <label for="term3" class="tpzro">
+                        Có! Tôi muốn nhận thông tin về khóa học, trường, học
+                        bổng và cẩm nang du học hữu ích từ duhoctoancau.com
+                      </label>
+                    </div>
+                    <div class="margin-bottom-20 frm-check clearfix">
+                      <input
+                        type="checkbox"
+                        class="styled-checkbox"
+                        id="term1"
+                        name="term1"
+                      />
+                      <label for="term1" class="tpzro">
+                        Đồng thời, tôi đồng ý chia sẻ thông tin của tôi tới các
+                        trường đại học phù hợp để nhận thông tin cập nhật từ các
+                        trường này
+                      </label>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="main-button" id="btnsearch">
+                        <i data-feather="mail"></i>
+                        Đăng ký
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-3 pb-3 mb-md-0 footer-block">
+              <h4 class="font-weight-bold text-uppercase mb-3">Liên hệ</h4>
+              <ul>
+                <li class="mb-2">
+                  <i class="text-white me-2" data-feather="map"></i>
+                  <a href="#"
+                    >Lô 30 BT4-3, Vinaconex3, đường Trung Văn, Nam Từ Liêm, Hà
+                    Nội</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <i class="text-white me-2" data-feather="phone"></i>
+                  <a href="#">0333 771 866</a>
+                </li>
+                <li>
+                  <i class="text-white me-2" data-feather="mail"></i>
+                  <a href="#">edu@duhoctoancau.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-4 mb-3 pb-3 mb-md-0 footer-block">
+              <h4 class="font-weight-bold text-uppercase mb-3">Thông tin</h4>
+              <a class="d-block mb-2" href="">Tin duhoctoancau.com</a>
+              <a class="d-block mb-2" href="">duhoctoancau.com</a>
+              <a class="d-block mb-2" href="">Edutas</a>
+              <a class="d-block mb-2" href="">Aupair Vietnam</a>
+              <a class="d-block mb-2" href="">ASCI GROUP</a>
+            </div>
+            <div class="col-12 col-md-4 mb-3 pb-3 mb-md-0 footer-block">
+              <h4 class="font-weight-bold text-uppercase mb-3">Follow Us</h4>
+              <img src="./images/banner-example.png" alt="" class="mb-2" />
+              <div class="d-flex align-items-center gap-2">
+                <div class="d-flex gap-1 align-items-center">
+                  <i class="text-white" data-feather="facebook"></i>
+                  <a href="#">Facebook</a>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <i class="text-white" data-feather="twitter"></i>
+                  <a href="#">Twitter</a>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <i class="text-white" data-feather="youtube"></i>
+                  <a href="#">Youtube</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex footer-watermark">
+            <p>
+              © 2017 <span class="text-white fw-bold">Edumart</span>. All right
+              reserved.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="#" class="text-uppercase">Terms of use</a>
+              <a href="#" class="text-uppercase">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="go-to-top-btn">
+      <button
+        id="toTop"
+        type="button"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="Lên đầu trang"
+      >
+        <i data-feather="arrow-up"></i>
+      </button>
+    </div>
+
+    <div class="social-group">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Facebook"
+      >
+        <img
+          src="https://bizweb.dktcdn.net/100/411/628/themes/804441/assets/icon-menu-right1.png?1669393939876"
+          alt=""
+        />
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Zalo"
+      >
+        <img
+          src="https://bizweb.dktcdn.net/100/411/628/themes/804441/assets/icon-menu-right2.png?1669393939876"
+          alt=""
+        />
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        class="phone"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Gọi cho Pancharm"
+      >
+        <img
+          src="https://bizweb.dktcdn.net/100/411/628/themes/804441/assets/icon-menu-right3.png?1669393939876"
+          alt=""
+        />
+      </a>
+    </div>
+
+    <div class="mobile-social-group">
+      <div
+        class="p-2 d-flex flex-column align-items-center justify-content-center"
+      >
+        <i class="main-color" data-feather="home"></i>
+        <a class="text-black" href="#">Home</a>
+      </div>
+      <div
+        class="p-2 d-flex flex-column align-items-center justify-content-center"
+      >
+        <i class="main-color" data-feather="facebook"></i>
+        <a class="text-black" href="#">Messenger</a>
+      </div>
+      <div
+        class="p-2 d-flex flex-column align-items-center justify-content-center"
+      >
+        <i class="main-color" data-feather="message-circle"></i>
+        <a class="text-black" href="#">Zalo</a>
+      </div>
+      <div
+        class="p-2 d-flex flex-column align-items-center justify-content-center"
+      >
+        <i class="main-color" data-feather="phone"></i>
+        <a class="text-black" href="#">Hotline</a>
+      </div>
+      <div
+        class="p-2 d-flex flex-column align-items-center justify-content-center"
+      >
+        <i class="main-color" data-feather="mail"></i>
+        <a class="text-black" href="#">Liên hệ</a>
+      </div>
+    </div>
+
+    <!-- jQuery 3.6.1 CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap 5 JS CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Feather icon JS -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Local JS -->
+    <script src="./js/alt.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
