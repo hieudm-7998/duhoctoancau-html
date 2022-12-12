@@ -624,4 +624,25 @@ ul {
 
 .question-category::before {
   content: none;
+}
+
+.service-contact-field {
+  padding: 30px;
+  background: url("./../images/phap.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.faq-reply::before {
+  content: none;
+}
+
+.slide img {
+  height: 100%;
+  position: unset;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: none;
 }/*# sourceMappingURL=styles.css.map */

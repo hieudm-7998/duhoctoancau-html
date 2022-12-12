@@ -1,6 +1,29 @@
 var $jq = jQuery.noConflict();
 
 $jq(document).ready(function () {
+  let stopScrolling = false;
+
+  window.addEventListener("touchmove", handleTouchMove, {
+    passive: false,
+  });
+
+  function handleTouchMove(e) {
+    if (!stopScrolling) {
+      return;
+    }
+    e.preventDefault();
+  }
+
+  function onTouchStart() {
+    stopScrolling = true;
+  }
+
+  function onTouchEnd() {
+    stopScrolling = false;
+  }
+
+  $(".banner-slide").slick();
+
   feather.replace();
 
   $("#sidebar-toggle").on("click", function () {
@@ -25,16 +48,6 @@ $jq(document).ready(function () {
   });
   $("#sidebar-collapse2").on("click", function () {
     $("#collapsed-chevron2").toggleClass("fa-plus fa-minus");
-  });
-
-  $(".banner-slide").slick({
-    infinite: true,
-    slidesToShow: 1,
-    arrows: false,
-    dots: false,
-    // adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
   });
 
   const feedbackSlideOpt = {
@@ -75,5 +88,13 @@ $jq(document).ready(function () {
   $(".go-to-top-btn").click(function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
     return false;
+  });
+
+  $(".faq-item").each(function () {
+    const $this = $(this);
+    $this.find(".view-reply").click(function () {
+      $(this).hide();
+      $this.find(".replies").show();
+    });
   });
 });
